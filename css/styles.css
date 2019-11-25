@@ -83,14 +83,13 @@ section {
 
 nav {
     width: 100%;
-    height: 80px;
     background-color: #252831;
     text-align: center;
 }
 
 nav h1 {
     margin: auto;
-    padding: 25px 0px;
+    padding: 20px 0px;
 }
 
 nav h1 a {
@@ -102,10 +101,9 @@ nav h1 a {
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 13px 40px 13px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
     margin: 0;
     width: 100%;
 }
@@ -114,6 +112,7 @@ nav h1 a {
 
 #breadcrumb li {
     display: inline;
+    font-size: 17px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -262,7 +261,7 @@ nav h1 a {
     font-size: 20pt;
     font-weight: 200;
     letter-spacing: 0;
-    margin: 15px 0 30px;
+    margin: 20px 0;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -376,6 +375,7 @@ nav h1 a {
 
 @media only screen and (max-width: 576px) {
     nav h1 a {
-        font-size: 10px;
+        font-size: 12px;
+        letter-spacing: 8px;
     }
 }
