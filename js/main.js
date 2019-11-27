@@ -145,6 +145,13 @@ resetRestaurants = (restaurants) => {
  * Create all restaurants HTML and add them to the webpage.
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
+  const noRestaurantsHeader = document.querySelector('.no-restaurants');
+  if(restaurants.length === 0) {
+    noRestaurantsHeader.classList.remove('hidden');
+  } else {
+    noRestaurantsHeader.classList.add('hidden');
+  }
+
   const ul = document.getElementById('restaurants-list');
   restaurants.forEach(restaurant => {
     ul.append(createRestaurantHTML(restaurant));

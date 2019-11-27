@@ -85,11 +85,13 @@ nav {
     width: 100%;
     background-color: #252831;
     text-align: center;
+    height: 80px;
 }
 
 nav h1 {
     margin: auto;
     padding: 20px 0px;
+    line-height: 40px;
 }
 
 nav h1 a {
@@ -175,6 +177,16 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
+
+.no-restaurants {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
 
 #restaurants-list {
     background-color: #f3f3f3;
@@ -374,16 +386,31 @@ nav h1 a {
     color: #666;
 }
 
-@media only screen and (max-width: 1024px) {
-}
+@media only screen and (max-width: 1024px) {}
 
 @media only screen and (max-width: 576px) {
     #cuisines-select {
         margin-top: 20px;
     }
-    
+
     nav h1 a {
         font-size: 12px;
         letter-spacing: 8px;
+    }
+
+    h2,
+    #reviews-container h2 {
+        font-size: 26px;
+    }
+
+    body,
+    td,
+    th,
+    p {
+        font-size: 11pt;
+    }
+
+    .review-header {
+        font-size: 16px;
     }
 }
